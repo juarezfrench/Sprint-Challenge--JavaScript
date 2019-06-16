@@ -28,7 +28,9 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. Describe the biggest difference between `.forEach` & `.map`. .map creates a new array.
+1. Describe the biggest difference between `.forEach` & `.map`. 
+
+.map creates a new array, .forEach returns undefined
 
 2. What is the difference between a function and a method?
 
@@ -40,7 +42,7 @@ Manipulating variables in such a way that each new iteration of a function doesn
 
 4. Describe the four rules of the 'this' keyword.
 
-1. Window/Global Object Binding - this is not bound to an internal function and looks to the window.
+1. Window/Global Object Binding - this is not bound to an internal function/element and looks to the window.
 2. Implicit Binding - this is bound by a parent/child relationship
 3. New binding - this is assigned in an array protptype object
 4. Explicit binding - this binding is explicitly stated
@@ -48,6 +50,8 @@ Manipulating variables in such a way that each new iteration of a function doesn
 
 
 5. Why do we need super() in an extended class?
+
+    So that the child can inherit the attributes of the parent.
 
 ## Project Set up
 

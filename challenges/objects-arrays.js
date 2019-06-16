@@ -42,19 +42,19 @@ const velociraptor = {
 
 // *****     OBJECTS ANSWERS     *****
 
-// console.log(`The tyrannosaurus weighed ${tyrannosaurus.weight}.`);
+console.log(`The tyrannosaurus weighed ${tyrannosaurus.weight}.`);
 
 // // What was the diet of a velociraptor?
-// console.log(`The velociraptor was ${velociraptor.diet}.`);
+console.log(`The velociraptor was ${velociraptor.diet}.`);
 
 // // How long was a stegosaurus?
-// console.log(`The stegosaurus was ${stegosaurus.length} long.`);
+console.log(`The stegosaurus was ${stegosaurus.length} long.`);
 
 // // What time period did tyrannosaurus live in?
-// console.log(`The tyrannosaurus lived in the ${tyrannosaurus.period} period.`);
+console.log(`The tyrannosaurus lived in the ${tyrannosaurus.period} period.`);
 
 // // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-// console.log(`The tyrannosaurus says ${tyrannosaurus.roar()}!`);;
+console.log(`The tyrannosaurus says ${tyrannosaurus.roar()}!`);;
 
 // ==== Arrays ====
 
@@ -158,26 +158,34 @@ console.log(contactInfo);
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 //const uni = [];
 
+//const hasUni = graduates.filter(foundUni => foundUni.university === "Uni");
 
+// let hasUni = function(){
+//   for (let i=0; i < universities.length; i++) {
+//       if (universities[i].includes('Uni') === (true)) {
+//           return universities[i];
+//       }
+//   }
+// }
 
-const hasUni = (universities.university)
-
-console.log(hasUni)
-//   return (universities.university).includes(Uni)}
-
-
-
-// console.log(hasUni())
-
-
-
-
+const Uni = universities.filter(uniHere => uniHere.includes("Uni"));
 
 
 
 
+console.log(Uni)
 
-//console.log("the total count of names containing 'Uni are: ",uniCount);
+
+//const hasUni = univerities.search
+
+
+//console.log(hasUni())
+
+
+
+
+
+//console.log("the total count of names containing '  are: ",uniCount);
 
 // ${sentence.includes(word)? 'is' : 'is not'}
 
@@ -255,7 +263,7 @@ The zoo wants to display both the scientific name and the animal name in front o
 // const animalNames = [];
 // console.log(animalNames);
 
-let animalNames = zooAnimals.forEach(function(namePair) { return `Animal Name ${namePair.animal_name}  Scientific name:${namePair.scientific_name}.`;
+let animalNames = zooAnimals.map(function(namePair) { return `Animal Name ${namePair.animal_name}  Scientific name:${namePair.scientific_name}.`;
 });
 
 console.log(animalNames);
@@ -265,13 +273,12 @@ console.log(animalNames);
 
 The zoos need a list of all their animal's names (names only, not scientific) converted to lower case.  Create a new array named lowerCase and map over each name to convert them all to lower case.  Log the resut.
 
-*/
+*/ //  zooAnimals.animal_name.toLowerCase()
 
-const lCase = zooAnimals.map(function(lcNames) {
-  return `(${lcNames.animal_name})`;});
-// const lowerCase = lCase.toLowerCase();
+const lCase = zooAnimals.map(function(lcNames) {return `(${lcNames.animal_name.toLowerCase()})`;});
+// // const lowerCase = lCase.toLowerCase();
 
-
+console.log(lCase)
 
 /* Request 3: .filter() 
 
